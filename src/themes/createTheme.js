@@ -82,9 +82,7 @@ export default function createTheme(
     backgroundColor_warning_focus: color.orange_60,
     backgroundColor_warning_hover: color.orange_50,
 
-    backgroundColor_input_danger: color.red_10,
-    backgroundColor_input_success: color.green_10,
-    backgroundColor_input_warning: color.yellow_10,
+    backgroundColor_input: color.white,
 
     backgroundColor_link_focus: color.gray_30,
 
@@ -100,10 +98,10 @@ export default function createTheme(
     borderColor_success_active: color.green_100,
     borderColor_success_focus: color.green_90,
     borderColor_success_hover: color.green_60,
-    borderColor_warning: color.yellow_70,
-    borderColor_warning_active: color.yellow_100,
+    borderColor_warning: color.orange_60,
+    borderColor_warning_active: color.orange_100,
     borderColor_warning_focus: color.orange_70,
-    borderColor_warning_hover: color.yellow_60,
+    borderColor_warning_hover: color.orange_40,
 
     borderRadius_1: pxToEm(3),
 

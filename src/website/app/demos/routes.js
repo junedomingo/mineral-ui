@@ -40,6 +40,10 @@ export default {
     slug: 'dropdown',
     title: 'Dropdown'
   },
+  'form-field': {
+    slug: 'form-field',
+    title: 'FormField'
+  },
   icon: {
     slug: 'icon',
     title: 'Icon'
@@ -67,6 +71,10 @@ export default {
   popover: {
     slug: 'popover',
     title: 'Popover'
+  },
+  'text-input': {
+    slug: 'text-input',
+    title: 'TextInput'
   },
   'theme-provider': {
     slug: 'theme-provider',

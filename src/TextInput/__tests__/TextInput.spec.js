@@ -15,30 +15,22 @@
  */
 
 /* @flow */
-import flatten from 'lodash/flatten';
-import createKeyMap from '../utils/createKeyMap';
-import button from './Button';
-import card from './Card';
-import dropdown from './Dropdown';
-import form from './Form';
-import icon from './Icon';
-import link from './Link';
-import menu from './Menu';
-import popover from './Popover';
-import textInput from './TextInput';
-import themeProvider from './ThemeProvider';
+import React from 'react';
+import { shallow } from 'enzyme';
+import TextInput from '../TextInput';
+import examples from '../../website/app/demos/TextInput/examples/text-input';
+import testDemoExamples from '../../../utils/testDemoExamples';
 
-const demos = flatten([
-  button,
-  card,
-  dropdown,
-  form,
-  icon,
-  link,
-  menu,
-  popover,
-  textInput,
-  themeProvider
-]);
+function renderTextInput() {
+  return shallow(<TextInput />);
+}
 
-export default createKeyMap(demos, 'slug');
+describe('TextInput', () => {
+  it('renders', () => {
+    const TextInput = renderTextInput();
+
+    expect(TextInput.exists()).toEqual(true);
+  });
+
+  testDemoExamples(examples);
+});
